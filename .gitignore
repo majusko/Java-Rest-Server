@@ -1,0 +1,35 @@
+*.class
+ 
+######################
+# Eclipse
+######################
+ 
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+ 
+# Directories #
+/build/
+/bin/
+target/
+rxjrest-backend/target/
+rxjrest-web/target/
+rxjrest-backend/src/main/resources/resources/database/
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+ 
+# Package Files #
+*.jar
+*.war
+*.ear

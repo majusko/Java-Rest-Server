@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="5 seconds" debug="true">
+	<contextName>espravca</contextName>
+	<jmxConfigurator />
+
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+        	<level>INFO</level>
+        </filter>
+		<encoder>
+			<pattern>[ %-6p] [%d{dd.MM.yyyy HH:mm:ss}] --- U:%X{req.user} I:%X{req.ip} S:%X{req.session} --- %c: %m%n%xEx</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.eclipse.jetty">
+        <level value="INFO" />
+	</logger>
+
+	<logger name="org.springframework">
+        <level value="INFO" />
+	</logger>
+
+	<logger name="org.springframework.aop.framework.Cglib2AopProxy">
+        <level value="ERROR" />
+	</logger>
+
+	<logger name="net.sf.ehcache">
+        <level value="INFO" />
+	</logger>
+
+	<logger name="sk.eglu">
+        <level value="DEBUG" />
+	</logger>
+
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="console" />
+	</root>
+
+</configuration>

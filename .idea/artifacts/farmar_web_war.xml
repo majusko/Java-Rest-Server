@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="farmar-web:war">
+    <output-path>$PROJECT_DIR$/farmar-web/target</output-path>
+    <root id="archive" name="farmar-web.war">
+      <element id="artifact" artifact-name="farmar-web:war exploded" />
+    </root>
+  </artifact>
+</component>
